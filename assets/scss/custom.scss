@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap');
+
+:root {
+    /* 変数も書き換えておく */
+    --font-family: 'Noto Sans JP', sans-serif;
+}
+
+body,
+.article-title,
+.article-content,
+.article-content p,
+.article-content li,
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Sans JP', sans-serif !important;
+    
+    /* 行間や文字の太さの調整 */
+    line-height: 1.8;
+    font-weight: 300; /* 細くしたければ 300 に */
+}
+
+/* 太字の箇所はしっかり太く */
+strong, b, h1, h2, h3, h4, h5, h6 {
+    font-weight: 700 !important;
+}
+
+/* コードブロックだけは等幅フォントに戻す */
+code, pre {
+    font-family: 'Menlo', 'Monaco', 'Consolas', 'Courier New', monospace !important;
+}
